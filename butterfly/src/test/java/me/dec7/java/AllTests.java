@@ -9,7 +9,8 @@ public class AllTests {
 		TestSuite suite = new TestSuite();
 		
 		suite.addTestSuite(StudentTest.class);
-		suite.addTestSuite(CourseSession.class);
+		suite.addTestSuite(CourseSessionTest.class);
+		suite.addTestSuite(RosterReporterTest.class);
 		
 		return suite;
 		

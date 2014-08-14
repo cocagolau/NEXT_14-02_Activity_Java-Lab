@@ -4,10 +4,15 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.List;
 
 public class CourseSession {
 
+	public static final String ROSTER_REPORT_HEADER = "#############";
+	public static final String ROSTER_REPORT_FOOTER = "*************";
+	public static final String NEWLINE = "\n";
+	
 	private String department;
 	private String number;
 	private List<Student> students;
@@ -67,6 +72,28 @@ public class CourseSession {
 		Date endDate = calendar.getTime();
 		
 		return endDate;
+	}
+
+//	public String getRosterReport() {
+//		StringBuilder buffer = new StringBuilder();
+//		
+//		buffer.append(ROSTER_REPORT_HEADER);
+//		buffer.append(NEWLINE);
+//		
+//		for (Student s : students) {
+//			buffer.append(s.getName());
+//			buffer.append(NEWLINE);
+//		}
+//		
+//		buffer.append(ROSTER_REPORT_FOOTER);
+//		buffer.append(NEWLINE + students.size() + NEWLINE);
+//		
+//		return buffer.toString();
+//	}
+
+	public List<Student> getAllStudents() {
+		
+		return students;
 	}
 
 }

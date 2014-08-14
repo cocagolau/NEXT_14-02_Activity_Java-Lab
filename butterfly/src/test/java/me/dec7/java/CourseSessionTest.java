@@ -54,5 +54,27 @@ public class CourseSessionTest extends TestCase {
 		
 		
 	}
+	
+//	public void testRosterReporter() {
+//		session.enroll(new Student("A"));
+//		session.enroll(new Student("B"));
+//		
+//		String rosterReport = session.getRosterReport();
+//		System.out.println(rosterReport);
+//		
+//		assertEquals(
+//				CourseSession.ROSTER_REPORT_HEADER +
+//				CourseSession.NEWLINE +
+//				"A" +
+//				CourseSession.NEWLINE +
+//				"B" +
+//				CourseSession.NEWLINE +
+//				CourseSession.ROSTER_REPORT_FOOTER +
+//				CourseSession.NEWLINE +
+//				"2" +
+//				CourseSession.NEWLINE
+//				, rosterReport);
+//		
+//	}
 
 }
